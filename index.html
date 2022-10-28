@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Mehrwertsteuer-Rechner</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>Mehrwertsteuer-Rechner</h1>
+        </div>
+
+        <section>
+            <!--
+                was soll berechnet werden
+                mwst aufschlagen
+                mwst abziehen
+            -->
+            <article id="what_should_be_calculated">
+                <form>
+                    <p>Was soll berechnet werden?</p>
+                    <input id="netto_brutto" type="radio" name="with_or_without_vat">
+                    <label for="netto_brutto">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+                    <input id="brutto_netto" type="radio" name="with_or_without_vat">
+                    <label for="brutto_netto">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+                </form>
+            </article>
+
+            <!--
+                wähle den mehrwertssteuersatz
+                7%
+                19%
+            -->
+            <article id="select_vat">
+                <p>Mehrwertsteuersatz</p>
+                <input id="nineteen_percent" type="radio" name="value_vat">
+                <label for="nineteen_percent">19 %</label>
+                <input id="seven_percent" type="radio" name="value_vat">
+                <label for="seven_percent">7 %</label>
+            </article>
+
+            <!--
+                eingabe betrag
+            -->
+            <article id="input">
+                <form>
+                    <label id="output" for="userInput"></label>
+                    <input id="userInput" type="text" required>
+                </form>
+            </article>
+
+            <!--
+                berechnung ausführen
+            -->
+            <button type="submit" onclick="plusVat()">Berechnen</button>
+
+            <article>
+                <h3>Ergebnis</h3>
+                <div>
+                    <p>Mehrwertsteuerbetrag</p>
+                    <p id="mwst"></p>
+                </div>
+                <div>
+                    <p id="brutto_netto_value"></p>
+                    <p id="final_price"></p>
+                </div>
+            </article>
+
+        </section>
+
+
+
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
