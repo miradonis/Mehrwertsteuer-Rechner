@@ -11,9 +11,7 @@
 
 <body>
     <main>
-        <div>
-            <h1>Mehrwertsteuer-Rechner</h1>
-        </div>
+        <h2>Mehrwertsteuer-Rechner</h2>
 
         <section>
             <!--
@@ -21,13 +19,19 @@
                 mwst aufschlagen
                 mwst abziehen
             -->
-            <article id="what_should_be_calculated">
+            <article>
                 <form>
-                    <p>Was soll berechnet werden?</p>
-                    <input id="netto_brutto" type="radio" name="with_or_without_vat">
-                    <label for="netto_brutto">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
-                    <input id="brutto_netto" type="radio" name="with_or_without_vat">
-                    <label for="brutto_netto">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+                    <h3>Was soll berechnet werden?</h3>
+
+                    <label>
+                        <input id="netto_brutto" type="radio" name="with_or_without_vat">Mehrwertsteuer
+                        aufschlagen (Netto zu Brutto)
+                    </label>
+                    <br>
+                    <label>
+                        <input id="brutto_netto" type="radio" name="with_or_without_vat">Mehrwertsteuer abziehen (Brutto
+                        zu Netto)
+                    </label>
                 </form>
             </article>
 
@@ -36,28 +40,31 @@
                 7%
                 19%
             -->
-            <article id="select_vat">
-                <p>Mehrwertsteuersatz</p>
-                <input id="nineteen_percent" type="radio" name="value_vat">
-                <label for="nineteen_percent">19 %</label>
-                <input id="seven_percent" type="radio" name="value_vat">
-                <label for="seven_percent">7 %</label>
+            <article>
+                <form>
+                    <h3>Mehrwertsteuersatz</h3>
+                    <input id="nineteen_percent" type="radio" name="value_vat">
+                    <label for="nineteen_percent">19% </label>
+                    <input id="seven_percent" type="radio" name="value_vat">
+                    <label for="seven_percent">7% </label>
+                </form>
             </article>
 
             <!--
                 eingabe betrag
             -->
-            <article id="input">
+            <article>
                 <form>
                     <label id="output" for="userInput"></label>
-                    <input id="userInput" type="text" required>
+                    <input id="userInput" type="text">
+                    <button type="submit" onclick="plus_minusVat(event)">Berechnen</button>
                 </form>
             </article>
 
             <!--
                 berechnung ausführen
             -->
-            <button type="submit" onclick="plusVat()">Berechnen</button>
+
 
             <article>
                 <h3>Ergebnis</h3>

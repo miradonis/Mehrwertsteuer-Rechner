@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+}
+
+main {
+    width: 30vw;
+    margin: 5vh auto 0 auto;
+    font-family: sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 3vh 0 3vh 1vw;
+    }
+
+    h3 {
+        margin-bottom: 2vh;
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    article {
+        background-color: rgb(230, 230, 255);
+        margin-bottom: 1vh;
+        padding: 3vh 1vw;
+
+        form {
+            label {
+                font-size: 1rem;
+            }
+
+            #netto_brutto,
+            #brutto_netto {
+                margin-right: .5vw;
+            }
+
+            #seven_percent {
+                margin-left: 1vw;
+            }
+
+            #userInput {
+                padding: 1.5% 4%;
+                margin-top: 2vh;
+                border-radius: 5px;
+                border: 1px solid rgb(187, 187, 254);
+            }
+
+            button {
+                margin-left: 4%;
+                padding: 1.5% 5%;
+                color: white;
+                background-color: rgb(95, 95, 148);
+                border-radius: 5px;
+                border: 1px solid rgb(187, 187, 254);
+            }
+        }
+
+        div {
+            margin-bottom: 3vh;
+        }
+    }
+
+
+
+
+}
